@@ -310,7 +310,7 @@ public class Router {
   }
 
   static Queue<String> createResponseQueue() {
-    return new ConcurrentLinkedQueue<>();
+    return new java.util.concurrent.LinkedBlockingQueue<>();
   }
 
   private boolean isFunctionRouterMode() {
